@@ -5,7 +5,7 @@ Reference: [Tinashou](https://github.com/thu-ml/tianshou)
 
 
 ## Requirements
-Note that: conda env and pytorch should folllow CUDA version of your GPU (If not, you may not be able to use pytorch-cuda)
+Note that: pytorch should folllow CUDA version of your GPU (If not, you may not be able to use pytorch-cuda)
 *   [mujoco-py](https://github.com/AIRLABkhu/Manuals/tree/main/Reinforcement%20Learning/Mujoco)
 *   [PyTorch](http://pytorch.org/)
 * Python >=3.8
