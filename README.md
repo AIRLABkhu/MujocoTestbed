@@ -14,6 +14,10 @@ Note that: conda env and pytorch should folllow CUDA version of your GPU (If not
 * gym==0.14.0
 
 ## Build
+
+first intall mujoco-py in your conda env click this link and follow the instructions
+[mujoco-py](https://github.com/AIRLABkhu/Manuals/tree/main/Reinforcement%20Learning/Mujoco)
+
 <pre><code>
 conda activate mujoco_py
 git clone https://github.com/AIRLABkhu/MujocoTestbed.git
