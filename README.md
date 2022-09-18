@@ -18,10 +18,6 @@ git clone https://github.com/AIRLABkhu/MujocoTestbed.git
 pip install -r requirements.txt
 </code></pre>
 
-## Usage
-<pre><code>
-
-</code></pre>
 
 ## Usage
 
@@ -58,16 +54,10 @@ $ ./analysis.py --root-dir ./results --norm
 
 ## Example benchmark
 
-<img src="./benchmark/Ant-v3/offpolicy.png" width="500" height="450">
+<img src="![image](https://user-images.githubusercontent.com/75155964/190888033-89518240-4427-4a4d-95af-eb74f3e17b83.png)" width="500" height="450">
 
 Other graphs can be found under `examples/mujuco/benchmark/`
 
 For pretrained agents, detailed graphs (single agent, single game) and log details, please refer to [https://cloud.tsinghua.edu.cn/d/f45fcfc5016043bc8fbc/](https://cloud.tsinghua.edu.cn/d/f45fcfc5016043bc8fbc/).
 
-## Offpolicy algorithms
 
-#### Notes
-
-1. In offpolicy algorithms (DDPG, TD3, SAC), the shared hyperparameters are almost the same, and unless otherwise stated, hyperparameters are consistent with those used for benchmark in SpinningUp's implementations (e.g. we use batchsize 256 in DDPG/TD3/SAC while SpinningUp use 100. Minor difference also lies with `start-timesteps`, data loop method `step_per_collect`, method to deal with/bootstrap truncated steps because of timelimit and unfinished/collecting episodes (contribute to performance improvement), etc.).
-2. By comparison to both classic literature and open source implementations (e.g., SpinningUp)<sup>[[1]](#footnote1)</sup><sup>[[2]](#footnote2)</sup>, Tianshou's implementations of DDPG, TD3, and SAC are roughly at-parity with or better than the best reported results for these algorithms, so you can definitely use Tianshou's benchmark for research purposes.
-3. We didn't compare offpolicy algorithms to OpenAI baselines [benchmark](https://github.com/openai/baselines/blob/master/benchmarks_mujoco1M.htm), because for now it seems that they haven't provided benchmark for offpolicy algorithms, but in [SpinningUp docs](https://spinningup.openai.com/en/latest/spinningup/bench.html) they stated that "SpinningUp implementations of DDPG, TD3, and SAC are roughly at-parity with the best-reported results for these algorithms", so we think lack of comparisons with OpenAI baselines is okay.
