@@ -22,7 +22,7 @@ pip install -r requirements.txt
 </code></pre>
 
 ## Algorithm
-DDPG,SAC,TD3 is available
+DDPG,SAC,TD3,PPO,A2C is available
 
 ## Usage
 
