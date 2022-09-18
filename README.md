@@ -1,5 +1,5 @@
 # MujocoTestbed
-MujocoTestbed
+this repository is highly 
 
 
 ## Requirements
@@ -18,10 +18,11 @@ git clone https://github.com/AIRLABkhu/MujocoTestbed.git
 pip install -r requirements.txt
 </code></pre>
 
+## Algorithm
+DDPG,SAC,TD3 is available
 
 ## Usage
-Algorithm
-DDPG,SAC,TD3
+
 
 Run
 
