@@ -1,7 +1,7 @@
 # MujocoTestbed
 
-MujocoTestbed of AIRLAB
-[Tinashou](https://github.com/thu-ml/tianshou)
+MujocoTestbed of AIRLAB\
+Reference: [Tinashou](https://github.com/thu-ml/tianshou)
 
 
 ## Requirements
