@@ -56,7 +56,7 @@ $ ./analysis.py --root-dir ./results --norm
 
 ## Example benchmark
 
-<img src="![image](https://user-images.githubusercontent.com/75155964/190888033-89518240-4427-4a4d-95af-eb74f3e17b83.png)" width="500" height="450">
+
 
 Other graphs can be found under `examples/mujuco/benchmark/`
 
