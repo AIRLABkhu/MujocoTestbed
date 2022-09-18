@@ -55,11 +55,4 @@ $ ./analysis.py --root-dir ./results --norm
 ```
 
 ## Example benchmark
-
-
-
-Other graphs can be found under `examples/mujuco/benchmark/`
-
-For pretrained agents, detailed graphs (single agent, single game) and log details, please refer to [https://cloud.tsinghua.edu.cn/d/f45fcfc5016043bc8fbc/](https://cloud.tsinghua.edu.cn/d/f45fcfc5016043bc8fbc/).
-
-
+![offpolicy](https://user-images.githubusercontent.com/75155964/190888083-e77c66f9-68e7-4673-bdb7-c5648da3754c.png)
