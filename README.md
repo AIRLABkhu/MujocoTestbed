@@ -20,6 +20,8 @@ pip install -r requirements.txt
 
 
 ## Usage
+Algorithm
+DDPG,SAC,TD3
 
 Run
 
