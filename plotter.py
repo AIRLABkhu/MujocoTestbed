@@ -20,7 +20,7 @@ csv_env_step = list()
 csv_reward = list()
 
 for a in algo:
-    df1 = pd.read_csv('./results/{}/{}/test_reward_4seeds.csv'.format(args.task,a))
+    df1 = pd.read_csv('./results/{}/{}/test_reward_seeds.csv'.format(args.task,a))
     df1 = df1.values.tolist()
     for lst in df1:
         for i in lst[3:-1]:
