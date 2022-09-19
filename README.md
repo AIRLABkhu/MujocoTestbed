@@ -53,10 +53,17 @@ Now that all the experiments are finished, we can convert all tfevent files into
 # generate csv
 $ ./tools.py --root-dir ./results/Ant-v3/sac
 # generate figures
-$ ./plotter.py --root-dir ./results/Ant-v3 --shaded-std --legend-pattern "\\w+"
-# generate numerical result (support multiple groups: `--root-dir ./` instead of single dir)
-$ ./analysis.py --root-dir ./results --norm
 ```
 
+If you finished every experiment (ex) SAC,TD3,DDPG in Ant-3)
+
+```bash
+# generate plot
+python plotter.py --task Ant-v3 --algo sac,td3,ddpg
+```
+
+# generate plot
+python plotter.py --task name of environment --algo algo1,algo2,....
+```
 ## Example benchmark
 ![offpolicy](https://user-images.githubusercontent.com/75155964/190888083-e77c66f9-68e7-4673-bdb7-c5648da3754c.png)
