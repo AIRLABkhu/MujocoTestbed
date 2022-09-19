@@ -11,4 +11,4 @@ do
 done
 echo "Experiments ended."
 
-python ./tools --root-dir ./results/$TASK/$ALGO
+python ./tools.py --root-dir ./results/$TASK/$ALGO
