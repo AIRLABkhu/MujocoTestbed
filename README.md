@@ -61,7 +61,7 @@ If you finished every experiment (ex) SAC,TD3,DDPG in Ant-3)
 # generate plot
 python plotter.py --task Ant-v3 --algo sac,td3,ddpg
 ```
-
+```bash
 # generate plot
 python plotter.py --task name of environment --algo algo1,algo2,....
 ```
