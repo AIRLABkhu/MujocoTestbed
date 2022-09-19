@@ -100,7 +100,7 @@ def merge_csv(csv_files, root_dir, remove_zero=False):
         line = [rows[0][0], round(array[:, 1].mean(), 4), round(array[:, 1].std(), 4)]
         line += array[:, 1].tolist()
         content.append(line)
-    output_path = os.path.join(root_dir, f"test_reward_{len(csv_files)}seeds.csv")
+    output_path = os.path.join(root_dir, f"test_reward_seeds.csv")
     print(f"Output merged csv file to {output_path} with {len(content[1:])} lines.")
     csv.writer(open(output_path, "w")).writerows(content)
 
