@@ -66,4 +66,4 @@ python plotter.py --task Ant-v3 --algo sac,td3,ddpg
 python plotter.py --task name of environment --algo algo1,algo2,....
 ```
 ## Example benchmark
-![offpolicy](https://user-images.githubusercontent.com/75155964/190888083-e77c66f9-68e7-4673-bdb7-c5648da3754c.png)
+![plot](https://user-images.githubusercontent.com/75155964/191147165-8cf75e1a-3ff4-4e81-8dc6-54ceff336961.png)
