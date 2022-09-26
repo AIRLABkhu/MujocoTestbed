@@ -137,3 +137,9 @@ and make plot
 ```
 python plotter.py --task {ENV_NAME} --algo {algo1},{algo2},{algo3} (for comparison of algorithms)
 ```
+Example (I run experiments on two algoritms (sac,ddpg) in Ant-v2) then
+```
+python tools.py --root-dir run/Ant-v2/sac
+python tools.py --root-dir run/Ant-v2/ddpg
+python plotter.py --task Ant-v2 --algo sac,ddpg
+```
