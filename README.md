@@ -21,7 +21,7 @@ pip install -r requirements.txt
 </code></pre>
 
 ## Algorithm
-DDPG,SAC is available for now. (TD3,PPO,A2C,TAC would be added)
+DDPG,SAC is available for now. 
 
 ### Default Arguments and Usage
 ------------
