@@ -130,9 +130,9 @@ optional arguments:
 ### Visualization
 
 First make csv_file
-'''
+```
 python tools.py --root-dir run/{ENV_NAME}/{Algo}
-'''
+```
 and make plot
 ```
 python plotter.py --task {ENV_NAME} --algo {algo1},{algo2},{algo3} (for comparison of algorithms)
