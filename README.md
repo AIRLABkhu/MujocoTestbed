@@ -1,7 +1,6 @@
 # MujocoTestbed
 
 MujocoTestbed of AIRLAB\
-Reference: [Tinashou](https://github.com/thu-ml/tianshou)
 
 
 ## Requirements
@@ -30,7 +29,7 @@ DDPG,SAC,TD3,PPO,A2C is available
 Run
 
 ```bash
-$ python mujoco_sac.py --task Ant-v3
+$ python main_sac.py --task Ant-v3
 ```
 
 Logs is saved in `./log/` and can be monitored with tensorboard.
