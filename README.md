@@ -1,6 +1,6 @@
 # MujocoTestbed
 
-MujocoTestbed of AIRLAB\
+MujocoTestbed of AIRLAB
 
 
 ## Requirements
