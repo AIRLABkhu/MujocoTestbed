@@ -126,3 +126,14 @@ optional arguments:
                         (default: 1)
   --replay_size N       size of replay buffer (default: 1e6)
 ```
+
+### Visualization
+
+First make csv_file
+'''
+python tools.py --root-dir run/{ENV_NAME}/{Algo}
+'''
+and make plot
+```
+python plotter.py --task {ENV_NAME} --algo {algo1},{algo2},{algo3} (for comparison of algorithms)
+```
