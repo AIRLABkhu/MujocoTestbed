@@ -140,9 +140,7 @@ class DeterministicPolicy(nn.Module):
         super(DeterministicPolicy, self).__init__()
         self.linear1 = nn.Linear(num_inputs, hidden_dim)
         self.linear2 = nn.Linear(hidden_dim, hidden_dim)
-
-        self.mean = nn.Linear(hidden_dim, num_actions)
-        self.noise = torch.Tensor(num_actions)
+        self.linear3 = nn.Linear(hidden_dim, num_actions)
 
         self.apply(weights_init_)
 
@@ -159,18 +157,12 @@ class DeterministicPolicy(nn.Module):
     def forward(self, state):
         x = F.relu(self.linear1(state))
         x = F.relu(self.linear2(x))
-        mean = torch.tanh(self.mean(x)) * self.action_scale + self.action_bias
-        return mean
+        mu = torch.tanh(self.linear3(x)) * self.action_scale + self.action_bias
+        return mu
 
-    def sample(self, state):
-        mean = self.forward(state)
-        noise = self.noise.normal_(0., std=0.1)
-        noise = noise.clamp(-0.25, 0.25)
-        action = mean + noise
-        return action, torch.tensor(0.), mean
 
     def to(self, device):
         self.action_scale = self.action_scale.to(device)
         self.action_bias = self.action_bias.to(device)
-        self.noise = self.noise.to(device)
         return super(DeterministicPolicy, self).to(device)
+
