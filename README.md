@@ -51,12 +51,12 @@ usage(ddpg):main.py [-h] [--env-name ENV_NAME] [--policy POLICY]
 #### For SAC
 
 ```
-python sac/main.py --env-name Humanoid-v2 --alpha 0.05
+python SAC/main.py --env-name Humanoid-v2 --alpha 0.05
 ```
 
 ### For DDPG
 ```
-python ddpg/main.py --env-name Huamnoid-v2
+python DDPG/main.py --env-name Huamnoid-v2
 ```
 
 ### Arguments
