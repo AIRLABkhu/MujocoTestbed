@@ -25,28 +25,6 @@ DDPG,SAC is available for now.
 
 ### Default Arguments and Usage
 ------------
-### Usage
-
-```
-usage(sac): main.py [-h] [--env-name ENV_NAME] [--policy POLICY] [--eval EVAL]
-               [--gamma G] [--tau G] [--lr G] [--alpha G]
-               [--automatic_entropy_tuning G] [--seed N] [--batch_size N]
-               [--num_steps N] [--hidden_size N] [--updates_per_step N]
-               [--start_steps N] [--test_interval][--target_update_interval N]
-               [--replay_size N]
-```
-
-```
-usage(ddpg):main.py [-h] [--env-name ENV_NAME] [--policy POLICY]
-               [--gamma G] [--tau G] [--ou_noise] [--noise_scale] [--final_noise_scale G] [--exploration_end N]
-               [--lr G] [--alpha G]
-               [--automatic_entropy_tuning G] [--seed N] [--batch_size N]
-               [--num_steps N] [--hidden_size N] [--updates_per_step N]
-               [--start_steps N] [--test_interval][--target_update_interval N]
-               [--replay_size N]
-```
-
-(Note: There is no need for setting Temperature(`--alpha`) if `--automatic_entropy_tuning` is True.)
 
 #### For SAC
 
