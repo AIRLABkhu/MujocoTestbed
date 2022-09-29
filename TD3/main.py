@@ -49,7 +49,7 @@ rewards = []
 
 print('---------------------------------------')
 print('Environment:', args.env_name)
-print('Algorithm:DDPG')
+print('Algorithm:TD3')
 print('State dimension:', obs_dim)
 print('Action dimension:', act_dim)
 print('Action limit:', act_limit)
@@ -65,11 +65,11 @@ torch.manual_seed(seed)
 
 i=0
 while True:
-    if os.path.exists('run/{}/ddpg/{}'.format(args.env_name, i)):
+    if os.path.exists('run/{}/td3/{}'.format(args.env_name, i)):
         i += 1
     else:
         break
-writer = SummaryWriter('run/{}/ddpg/{}'.format(args.env_name, i))
+writer = SummaryWriter('run/{}/td3/{}'.format(args.env_name, i))
 agent = Agent(env, args, device, obs_dim, act_dim, act_limit,
               act_noise=args.noise_scale,
               hidden_sizes=(args.hidden_size, args.hidden_size),
