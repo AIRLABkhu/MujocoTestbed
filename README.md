@@ -21,7 +21,7 @@ pip install -r requirements.txt
 </code></pre>
 
 ## Algorithm
-DDPG,SAC is available for now. 
+DDPG,SAC,TD3,PPO is available. 
 
 ### Default Arguments and Usage
 ------------
@@ -37,6 +37,15 @@ python SAC/main.py --env-name Humanoid-v2 --alpha 0.05
 python DDPG/main.py --env-name Huamnoid-v2
 ```
 
+### For TD3
+```
+python TD3/main.py --env-name Humanoid-v2
+```
+
+### For PPO
+```
+python PPO/main.py --env-name Humanoid-v2
+```
 
 ### Visualization
 
