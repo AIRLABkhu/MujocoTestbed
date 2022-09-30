@@ -129,6 +129,6 @@ for i_episode in itertools.count(1):
             print("----------------------------------------")
             print("Total Numsteps: {}, Avg. Reward: {}".format(total_numsteps, round(avg_reward, 2)))
             print("----------------------------------------")
-            break
+            done=False
 
 env.close()
