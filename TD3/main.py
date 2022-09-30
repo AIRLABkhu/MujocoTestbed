@@ -112,6 +112,7 @@ for i_episode in itertools.count(1):
                 agent.update_parameters(memory)
 
         if total_numsteps % args.test_interval == 0:
+            org_state=state
             avg_reward = 0.
             episodes = 5
             for _ in range(episodes):
@@ -130,6 +131,7 @@ for i_episode in itertools.count(1):
             print("----------------------------------------")
             print("Total Numsteps: {}, Avg. Reward: {}".format(total_numsteps, round(avg_reward, 2)))
             print("----------------------------------------")
-            break
+            done=False
+            state=org_state
 
 env.close()
