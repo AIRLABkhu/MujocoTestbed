@@ -108,7 +108,7 @@ for i_episode in itertools.count(1):
 
         state = next_state
 
-        if total_numsteps>args.start_step:
+        if len(memory)>args.batch_size:
             # Number of updates per step in environment
             for i in range(args.updates_per_step):
                 # Update parameters of all the networks
