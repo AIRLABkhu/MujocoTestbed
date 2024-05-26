@@ -25,7 +25,7 @@ for a in algo:
     df1 = pd.read_csv('./run/{}/{}/test_reward_seeds.csv'.format(args.task,a))
     df1 = df1.values.tolist()
     for lst in df1:
-        for i in lst[3:-1]:
+        for i in lst[3:]:
             csv_algo_lst.append(a)
             csv_env_step.append(lst[0])
             csv_reward.append(i)
