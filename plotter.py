@@ -33,7 +33,10 @@ for a in algo:
             csv_reward.append(i)
 
 my_df=pd.DataFrame({"Model":csv_algo_lst,"timesteps":csv_env_step,"Accumulated Reward":csv_reward})
-my_df['Accumulated Reward'] = smooth_data(my_df['Accumulated Reward'], 25)
+my_df['Accumulated Reward'] = smooth_data(my_df['Accumulated Reward'], 1)
+
+sns.lineplot(x="timesteps",y="Accumulated Reward",hue="Model",data=my_df)
+plt.show()
 
 sns.lineplot(x="timesteps",y="Accumulated Reward",hue="Model",data=my_df)
 plt.show()
