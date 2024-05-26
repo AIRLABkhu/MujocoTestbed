@@ -4,8 +4,7 @@ envpool
 gym==0.23.1
 tqdm
 numpy>1.16.0
-tensorboard>=2.5.0
-pytorch==1.13.1
+tensorboard
 numba>=0.51.0
 h5py>=2.10.0
 protobuf~=3.19.0
@@ -27,7 +26,4 @@ pydocstyle
 doc8
 scipy
 pillow
-pettingzoo>=1.17
-pygame>=2.1.0
-pymunk>=6.2.1
-nni>=2.3
+
