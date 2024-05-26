@@ -1,5 +1,7 @@
 mujoco
 matplotlib
+pandas
+seaborn
 envpool
 gym==0.23.1
 tqdm
