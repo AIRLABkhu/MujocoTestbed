@@ -5,6 +5,7 @@ gym==0.23.1
 tqdm
 numpy>1.16.0
 tensorboard
+tensorboardX
 numba>=0.51.0
 h5py>=2.10.0
 protobuf~=3.19.0
