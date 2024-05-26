@@ -20,7 +20,9 @@ algo=args.algo.split(',')
 csv_algo_lst = list()
 csv_env_step = list()
 csv_reward = list()
-
+def smooth_data(data, window_size):
+    return data.rolling(window=window_size, min_periods=1).mean()
+    
 for a in algo:
     df1 = pd.read_csv('./run/{}/{}/test_reward_seeds.csv'.format(args.task,a))
     df1 = df1.values.tolist()
@@ -31,5 +33,7 @@ for a in algo:
             csv_reward.append(i)
 
 my_df=pd.DataFrame({"Model":csv_algo_lst,"timesteps":csv_env_step,"Accumulated Reward":csv_reward})
+my_df['Accumulated Reward'] = smooth_data(my_df['Accumulated Reward'], 25)
+
 sns.lineplot(x="timesteps",y="Accumulated Reward",hue="Model",data=my_df)
 plt.show()
