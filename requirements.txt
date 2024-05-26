@@ -1,7 +1,7 @@
 mujoco
 matplotlib
 envpool
-gym==0.14.0
+gym==0.23.1
 tqdm
 numpy>1.16.0
 tensorboard>=2.5.0
